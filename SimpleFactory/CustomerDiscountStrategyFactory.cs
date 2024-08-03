@@ -1,4 +1,5 @@
-﻿using StrategyPattern.Core;
+﻿using SimpleFactory.Core.CustomerDiscountStrategy;
+using StrategyPattern.Core;
 using StrategyPattern.Core.CustomerDiscountStrategy;
 using System;
 using System.Collections.Generic;
@@ -22,7 +23,7 @@ namespace SimpleFactory
             }
             else
             {
-                return null;
+                return new NullDiscountStrategy();
             }
         }
     }

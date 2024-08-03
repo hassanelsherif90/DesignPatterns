@@ -23,6 +23,12 @@ namespace StrategyPattern.Core
                     Id = 2,
                     Name = "Mohamed Ali Mohamed",
                      Category = CustomerCategory.Silver
+                },
+                new Customer
+                {
+                    Id = 3,
+                    Name = "Aya Gamal Gad",
+                    Category = CustomerCategory.None
                 }
             };
         }

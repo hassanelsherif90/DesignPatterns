@@ -10,6 +10,7 @@ namespace StrategyPattern.Core
     {
         New,
         Silver, 
-        Gold
+        Gold,
+        None
     }
 }
