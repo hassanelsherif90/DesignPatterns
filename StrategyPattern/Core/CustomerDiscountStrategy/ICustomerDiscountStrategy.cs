@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StrategyPattern.Core.CustomerDiscountStrategy
 {
-    internal interface ICustomerDiscountStrategy
+    public interface ICustomerDiscountStrategy
     {
         double CalculateDiscount(double totalprice);
     }

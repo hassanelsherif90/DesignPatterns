@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace StrategyPattern.Core
 {
-    internal class InvoiceManager
+    public class InvoiceManager
     {
-        private ICustomerDiscountStrategy _customerDiscountStrategy;
+        private ICustomerDiscountStrategy? _customerDiscountStrategy;
         public void SetDiscountStrategy(ICustomerDiscountStrategy Strategy)
         {
             _customerDiscountStrategy = Strategy;
@@ -18,7 +18,7 @@ namespace StrategyPattern.Core
         {
            
 
-            var invoice = new Invoice
+            Invoice? invoice = new()
             {
                 Customer = customer,
                 Lines = new[]
@@ -28,7 +28,7 @@ namespace StrategyPattern.Core
 
             };
 
-            invoice.DiscountPersentag = _customerDiscountStrategy.CalculateDiscount(invoice.TotalPrice);
+            invoice.DiscountPersentag = _customerDiscountStrategy!.CalculateDiscount(invoice.TotalPrice);
 
             return invoice;
         }

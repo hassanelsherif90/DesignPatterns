@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StrategyPattern.Core
 {
-    internal enum CustomerCategory
+    public enum CustomerCategory
     {
         New,
         Silver, 

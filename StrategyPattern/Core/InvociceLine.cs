@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StrategyPattern.Core
 {
-    internal class InvociceLine
+    public class InvociceLine
     {
         public double Quantity { get;  set; }
         public double UnitPrice { get;  set; }

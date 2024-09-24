@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StrategyPattern.Core
 {
-    internal class CustomerDataReader
+    public class CustomerDataReader
     {
         public IEnumerable <Customer> GetCustomer()
         {

@@ -68,7 +68,7 @@ while (true)
             
             var totalQuantity = order.Lines.Sum(x => x.Quantity);
             var totalPrice = order.Lines.Sum(x => x.Quantity * x.UnitPrice);
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"Order #{order.Id} created: Quantity = {totalQuantity}, Total Price = {totalPrice}");
             Console.ForegroundColor = ConsoleColor.White;
         }
